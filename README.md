@@ -7,18 +7,11 @@ Recession Risk Modeling via Yield Curve Behavior: Evaluates how tariffs flatten 
 Both models use publicly available macroeconomic datasets and are structured using preprocessed variables for empirical clarity.
 
 📁 Project Structure:
+
+
+
 <img width="851" height="282" alt="image" src="https://github.com/user-attachments/assets/de886f3f-0df7-4383-b260-0eab5fe9c49e" />
 
-tariff/
-├── GDP_Growth.xlsx              # Supporting data for GDP trends
-├── GDP_Slowdown.ipynb           # Jupyter notebook for GDP SEM modeling
-├── preprocessed.xlsx            # Preprocessed data for GDP SEM
-├── preprocessed2.xlsx           # Preprocessed data for recession/yield curve SEM
-├── Recession_Signals.ipynb      # Jupyter notebook for yield curve SEM model
-├── Tax_Receipts.xlsx            # Raw or processed input for tariff revenue
-├── Yield_Curve.xlsx             # Yield curve data for U.S. term structure analysis
-├── README.md                    # Project overview (this file)
-├── researchp.docx               # Original research documentation
 
 📉 GDP Slowdown SEM Model:
 This SEM model explores how the shocks introduced by tariffs (both in price and revenue) indirectly and directly impact GDP through intermediate effects on sectoral output. The model provides insight into transmission channels and relative variable significance.
@@ -37,16 +30,8 @@ Structural Model:
 Sector_Output ~ Tariff_Revenue + Real_Imports + Import_Price
 GDP ~ Tariff_Revenue + Real_Imports + Import_Price + Sector_Output
 
-SEM Results (GDP Model)
-Path	Estimate	Interpretation
-Real_Imports ~ Sector_Output	0.00425	Insignificant positive effect
-Sector_Output ~ Tariff_Revenue	-0.00415	Weak direct effect from tariffs
-Sector_Output ~ Real_Imports	0.00028	Minor correlation with import volumes
-Sector_Output ~ Import_Price	0.00047	Minimal inflationary transmission
-GDP ~ Tariff_Revenue	-0.00934	Tariffs slightly reduce GDP
-GDP ~ Real_Imports	0.00129	Marginal positive contribution
-GDP ~ Import_Price	-0.0266	Rising prices reduce GDP
-GDP ~ Sector_Output	0.884	Sectoral health strongly predicts GDP
+<img width="863" height="507" alt="image" src="https://github.com/user-attachments/assets/1ab85b9f-8a2e-4a61-bf41-44999e620029" />
+
 
 Interpretation: The dominant explanatory variable for GDP is sectoral output, which acts as a mediator between tariffs and growth. Direct tariff effects are statistically minor, but they significantly influence intermediate channels.
 
@@ -56,10 +41,12 @@ SEM Specification:
 Yield_Curve = Real_GDP + Tariff_Revenue + Real_Imports
 
 Model Output:
-Predictor	Estimate	Std. Err	z-value	p-value
-Real_GDP	+0.000148	0.000067	2.20	0.028
-Tariff_Revenue	–0.030809	0.005128	–6.01	<0.001
-Real_Imports	–0.000011	0.000296	–0.037	0.971
+
+
+<img width="652" height="263" alt="image" src="https://github.com/user-attachments/assets/7118ed35-db25-472a-9501-d90871eacfe9" />
+
+
+
 
 Interpretation
 Tariff Revenue flattens the yield curve — consistent with increased recession risk.
