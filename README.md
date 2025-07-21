@@ -7,6 +7,8 @@ Recession Risk Modeling via Yield Curve Behavior: Evaluates how tariffs flatten 
 Both models use publicly available macroeconomic datasets and are structured using preprocessed variables for empirical clarity.
 
 📁 Project Structure:
+<img width="851" height="282" alt="image" src="https://github.com/user-attachments/assets/de886f3f-0df7-4383-b260-0eab5fe9c49e" />
+
 tariff/
 ├── GDP_Growth.xlsx              # Supporting data for GDP trends
 ├── GDP_Slowdown.ipynb           # Jupyter notebook for GDP SEM modeling
